@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="container">
+    <h1>User Sign up</h1>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
