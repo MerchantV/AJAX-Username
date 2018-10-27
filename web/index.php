@@ -6,7 +6,6 @@
   <title>User Sign-up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="main.js"></script>
 </head>
 <body>
   <div class="container">
@@ -58,5 +57,7 @@
       <button type="submit" class="btn btn-primary">Sign in</button>
     </form> 
   </div>
+  <!-- Load JS last so that the DOM is available within the script. -->
+  <script src="main.js"></script>
 </body>
 </html>
