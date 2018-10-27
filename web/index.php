@@ -6,10 +6,21 @@
   <title>User Sign-up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style type="text/css">
+    .username-available-msg, .username-taken-msg {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1 class="mt-4 mb-5">User Sign up</h1>
+    <div class="username-available-msg alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    <div class="username-taken-msg alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
     <form>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -46,15 +57,7 @@
           <input type="text" class="form-control" id="inputZip">
         </div>
       </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+     <button type="submit" class="btn btn-primary">Sign in</button>
     </form> 
   </div>
   <!-- Load JS last so that the DOM is available within the script. -->

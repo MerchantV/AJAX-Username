@@ -6,7 +6,7 @@
   ];
 
   if (isset($_GET['username']) && (strlen($_GET['username']) !== 0)) {
-    $response['username_available'] = ! in_array($_GET['username'], $registered_usernames);
+    $response['usernameAvailable'] = ! in_array($_GET['username'], $registered_usernames);
     $response['success'] = true;
   } 
 
