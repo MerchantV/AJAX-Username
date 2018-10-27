@@ -2,11 +2,10 @@
   $registered_usernames = ['wallyg', 'dglutton', 'stungeye', 'mirage', 'chin', 'alan'];
 
   $response = [
-    'success' => false,
-    'data' => $_GET
+    'success' => false
   ];
 
-  if (isset($_GET['username']) && (strlen($_GET['username']) === 0)) {
+  if (isset($_GET['username']) && (strlen($_GET['username']) !== 0)) {
     $response['username_available'] = ! in_array($_GET['username'], $registered_usernames);
     $response['success'] = true;
   } 
