@@ -9,8 +9,8 @@ function usernameMessage(usernameAvailable) {
     usernameAvailableMsg.style.display = 'none';
     usernameTakenMsg.style.display = 'block';
   }
-
 }
+
 function checkUsername(event) {
   let username = event.target.value;
 
@@ -25,9 +25,9 @@ function checkUsername(event) {
     .then(function(response) {
       if (response['success']) {
         usernameMessage(response['usernameAvailable'])
+        event.target.focus();
       }
     });
-
 };
 
 let inputUsername = document.querySelector('#inputUsername');

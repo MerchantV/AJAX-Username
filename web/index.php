@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <style type="text/css">
     .username-available-msg, .username-taken-msg {
-      display: block;
+      display: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="mt-4 mb-5">User Sign up</h1>
+    <h1 class="mt-4 mb-4">User Sign up</h1>
     <div class="username-available-msg alert alert-primary" role="alert">
-      A simple primary alert—check it out!
+      Username is available. Please continue to fill out this lovely form.
     </div>
     <div class="username-taken-msg alert alert-danger" role="alert">
-      A simple danger alert—check it out!
+      Sorry this username is taken. Please choose a different username.
     </div>
     <form>
-      <div class="form-row">
+      <div class="form-row mt-4">
         <div class="form-group col-md-6">
           <label for="inputUsername">Username</label>
           <input type="text" class="form-control" id="inputUsername" placeholder="Username">
