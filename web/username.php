@@ -2,7 +2,8 @@
   $registered_usernames = ['wallyg', 'dglutton', 'stungeye', 'mirage', 'chin', 'alan'];
 
   $response = [
-    'success' => false
+    'success' => false,
+    'data' => $_GET
   ];
 
   if (isset($_GET['username']) && (strlen($_GET['username']) === 0)) {
