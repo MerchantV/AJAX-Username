@@ -25,7 +25,9 @@ function checkUsername(event) {
     .then(function(response) {
       if (response['success']) {
         usernameMessage(response['usernameAvailable'])
-        event.target.focus();
+        if (! response['usernameAvailable']) {
+          event.target.select();
+        }
       }
     });
 };
