@@ -12,3 +12,12 @@ Taken usernames:
 * mirage
 * chin 
 * alan
+
+## Files
+
+**index.php** - Form component taken from the Boostrap web site. The only important element here is the username input.
+
+**main.js** - Javascript that binds the username check to the "on blur" event of the username form input.
+
+**username.php** - Username check API that returns JSON.
+
