@@ -1,5 +1,5 @@
 
-// Hides or shows the username available and the user name taken
+// Hides or shows the username available and the username taken
 // messages using CSS block property.
 function usernameMessage(usernameAvailable) {
   let usernameAvailableMsg = document.querySelector('.username-available-msg');
